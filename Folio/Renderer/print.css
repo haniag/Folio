@@ -1,0 +1,69 @@
+/* Print styles adapted from markdown-live-preview (public/css/style.css). */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #24292f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Body text defaults to Aptos; code blocks keep github-markdown-css's monospace stack. */
+.markdown-body {
+  font-family: "Aptos", -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.markdown-body img,
+.markdown-body table {
+  max-width: 100%;
+}
+
+.markdown-body pre,
+.markdown-body code {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  break-after: avoid;
+}
+
+.markdown-body pre,
+.markdown-body blockquote,
+.markdown-body table,
+.markdown-body img {
+  break-inside: avoid;
+}
+
+.markdown-body .mermaid {
+  width: 100%;
+  padding: 12px 0;
+  margin: 16px 0;
+  text-align: center;
+  background: transparent;
+  break-inside: avoid;
+}
+
+.markdown-body .mermaid svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.markdown-body .mermaid-error {
+  color: #cf222e;
+  text-align: left;
+  white-space: pre-wrap;
+}
